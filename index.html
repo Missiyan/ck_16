@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор и разница дат</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Калькулятор -->
+    <h1>Калькулятор</h1>
+    <input type="number" id="num1" placeholder="Число 1">
+    <input type="number" id="num2" placeholder="Число 2">
+    <div>
+        <button class="operation">+</button>
+        <button class="operation">-</button>
+        <button class="operation">*</button>
+        <button class="operation">/</button>
+    </div>
+    <div>
+        <button id="calculate">Ответ</button>
+        <button id="clear">Очистить</button>
+    </div>
+    <p id="result" class="error"></p>
+
+    <!-- Вычисление разницы между датами -->
+    <h1>Разница между датами</h1>
+    <label for="startDate">Дата начала:</label>
+    <input type="date" id="startDate">
+    <br><br>
+    <label for="endDate">Дата окончания:</label>
+    <input type="date" id="endDate">
+    <br><br>
+    <button id="calculateDifference">Посчитать разницу</button>
+    <p id="ageResult" class="error"></p>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
